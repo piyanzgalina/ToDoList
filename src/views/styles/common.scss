@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+body {
+    font: 16px/1.4 'Work Sans', sans-serif;
+    background: rgb(255,248,248);
+    background: radial-gradient(circle, rgba(255,248,248,1) 0%, rgba(226,163,215,1) 100%);  
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 650px) {
+    body {
+        font: 12px/1.2 'Work Sans', sans-serif;
+        background: rgb(247, 220, 243);
+        min-height: 100vh;
+        padding: 0.7rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}

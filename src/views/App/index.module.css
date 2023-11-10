@@ -1,0 +1,35 @@
+.article {
+  background-color: rgb(255, 253, 253);
+  width: 80vw;
+  border-radius: 20px;
+  padding: 20px 55px;
+}
+.articleTitle {
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+  text-align: center;
+  color: rgb(221, 148, 209);
+}
+.articleText {
+  text-align: center;
+  color: rgb(226, 163, 215);
+}
+
+@media (max-width: 650px) {
+  .article {
+    background-color: rgb(250, 232, 247);
+    width: 80vw;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+  }
+  .articleTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.3em;
+    text-align: center;
+    color: rgb(221, 148, 209);
+  }
+  .articleText {
+    text-align: center;
+    color: rgb(226, 163, 215);
+  }
+}/*# sourceMappingURL=index.module.css.map */

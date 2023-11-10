@@ -1,0 +1,36 @@
+.inputPlus {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    
+    &Value {
+        font: 1rem/1.4 'Work Sans', sans-serif;
+        padding: 0.5rem 2rem;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: none;
+        background-color: transparent;
+        box-shadow: inset 5px 0px 15px #e2a3d766;
+        outline: none;
+        color: rgb(221, 148, 209);
+
+        &::placeholder {
+            color: rgba(226,163,215,0.8);
+        }
+    }
+
+    &Button{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border: none;
+        background-color: transparent;
+        box-shadow: inset -5px 0px 15px rgba(226,163,215,0.4);
+        cursor: pointer;
+    }
+}

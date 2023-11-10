@@ -1,0 +1,62 @@
+.inputTask{
+    min-height: 2.5em;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr auto auto;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0.7em;
+    border-radius: 20px;
+
+    box-shadow: inset 5px 0px 15px #e2a3d766;
+    color: rgb(99, 40, 89);
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+
+    &Checkbox {
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 5px 5px 15px #e2a3d766;
+        }
+    }
+
+    &Title {
+        padding: 0.5em;
+        line-height: 1.2;
+        transition: all 0.3s;
+        box-sizing: content-box;
+        overflow-wrap: break-word;
+        hyphens: none;
+        color: rgb(221, 148, 209);
+
+        &:hover {
+            text-shadow: 0px 5px 5px  rgba(226,163,215,0.3);
+        }
+    }
+
+    &EditingInput {
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: solid 1px rgb(221, 148, 209);
+        background-color: transparent;
+        font: 1rem/1.4 'Work Sans', sans-serif;
+        color: rgb(221, 148, 209);
+    }
+
+    &Button {
+        cursor: pointer;
+        border: none;
+        background: none;
+        text-shadow: 0px 5px 5px  rgba(226,163,215,0.5);
+        transition: all 0.3s;
+
+        &:hover {
+            font-size: 1.2em;
+            text-shadow: 0px 5px 5px  rgba(226,163,215,0.8);
+        }
+    }
+}
