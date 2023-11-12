@@ -2,19 +2,21 @@
 
 body {
     font: 16px/1.4 'Work Sans', sans-serif;
-    background: rgb(255,248,248);
-    background: radial-gradient(circle, rgba(255,248,248,1) 0%, rgba(226,163,215,1) 100%);  
+    background: rgb(255,238,238);
+    background: radial-gradient(circle, rgba(255,238,238,1) 13%, rgba(241,174,229,1) 100%);
     min-height: 100vh;
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
 
 @media (max-width: 650px) {
     body {
-        font: 12px/1.2 'Work Sans', sans-serif;
+        font: 16px/1.2 'Work Sans', sans-serif;
         background: rgb(247, 220, 243);
         min-height: 100vh;
         padding: 0.7rem;
