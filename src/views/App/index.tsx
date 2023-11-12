@@ -19,7 +19,9 @@ export const App: React.FC = () => {
 
     return (
         <article className={styles.article}>
-            <h1 className={styles.articleTitle}>📋💅Your bibmo todo list💅📋</h1>
+            <h1 className={styles.articleTitle}>
+                📋💅Your bibmo todo list💅📋
+            </h1>
             <section className={styles.articleSection}>
                 <InputPlus
                     onAdd={(title) => {
@@ -46,9 +48,6 @@ export const App: React.FC = () => {
                         onRemove={removeTask}
                     />
                 ) )}
-                
-
-                
             </section>
         </article>
     )

@@ -24,45 +24,41 @@ export const InputTask: React.FC<InputTaskProps> = ({
     return (
         <div className={styles.inputTask}>
             <label>
-                { IsEditMode ? (
-                    <></>
-                ) : (
+                {IsEditMode ?  (
                     <input
-                        type='checkbox'
-                        disabled={IsEditMode}
-                        checked={checked}
-                        className={styles.inputTaskCheckbox}
-                        onChange={(event) => {
-                            setChecked(event.target.checked);
-                            if (event.target.checked) {
-                                setTimeout(() => {
-                                    onDone(id);
-                                }, 500)
-                                
+                        className={styles.inputTaskEditingInput}
+                        type='text'
+                        autoFocus={true}
+                        value={value}
+                        onChange={(event)=> {
+                            setValue(event.target.value)
+                        }}
+                        onKeyDown={(event) => {
+                            if (event.key === 'Enter') {
+                                onEdited(id, value);
+                                setIsEditMode(false)
                             }
-                    }}
-                    />
-                )} 
-              
-            {IsEditMode ?  (
-                <input
-                    className={styles.inputTaskEditingInput}
-                    type='text'
-                    autoFocus={true}
-                    value={value}
-                    onChange={(event)=> {
-                        setValue(event.target.value)
-                    }}
-                    onKeyDown={(event) => {
-                        if (event.key === 'Enter') {
-                            onEdited(id, value);
-                            setIsEditMode(false)
-                        }
-                    }}
-                    />
-            ) : (
-                <h3 className={styles.inputTaskTitle}>{title}</h3>
-            )}
+                        }}
+                        />
+                ) : (
+                    <>
+                        <input
+                            type='checkbox'
+                            disabled={IsEditMode}
+                            checked={checked}
+                            className={styles.inputTaskCheckbox}
+                            onChange={(event) => {
+                                setChecked(event.target.checked);
+                                if (event.target.checked) {
+                                    setTimeout(() => {
+                                        onDone(id);
+                                    }, 500);
+                                }
+                            }}
+                        />
+                        <h3 className={styles.inputTaskTitle}>{title}</h3>
+                    </>
+                )}
             </label>
 
             { IsEditMode ? (
