@@ -5,6 +5,7 @@
     grid-template-columns: 1fr 60px;
     margin-top: 1em;
     margin-bottom: 2em;
+
     
     &Value {
         font: 1rem/1.4 'Work Sans', sans-serif;
@@ -34,4 +35,22 @@
         box-shadow: inset -5px 0px 15px rgba(226,163,215,0.4);
         cursor: pointer;
     }
+}
+
+@media (max-width: 650px) {
+    .inputPlus {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 60px;
+        margin-top: 1em;
+        margin-bottom: 2em;
+
+        &Button, &Value {
+            background-color: rgb(247, 220, 243);
+            box-shadow: none;
+
+        }
+
+    }
+
 }
